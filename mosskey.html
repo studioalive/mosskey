@@ -18,6 +18,7 @@
 
 <body>
     <button id="back">Back</button>
+    <div class="image"><img id="image" src="img/10.jpg"></div>
     <span class="line" id=1>Plant without distinct leaves:Thallose liverworts & Hornworts <span id="click"
             onclick="goto(5)">Click here</span>
         <br>Plant with distinct leaves:
@@ -434,10 +435,10 @@
         wide:
         <span id="click" onclick="goto(87)">Click here</span>
     </span><span class="line" id=87>Leaves large to very large (largest leaves 3.5–10 mm long and
-    </span><span class="line" id=1>–3 mm wide); plants mostly robust (sometimes bud-like or forming short rosettes), in
+    1–3 mm wide); plants mostly robust (sometimes bud-like or forming short rosettes), in
         wide patches rather than compact cushions:Mnium, Plagiomnium, etc:<span id="click" onclick="goto(156)">Click here</span>
         <br>Leaves medium-sized to very small (3–5 mm long or less, most commonly
-    </span><span class="line" id=1>–2 mm long and seldom as much as 1 mm wide); plants mostly small and slender
+   1–2 mm long and seldom as much as 1 mm wide); plants mostly small and slender
         (occasionally tall and small-leaved); habit various, often forming compact cushions, sometimes forming turfs
         or scattered shoots:This large section is subdivided into five, according to habitat, growing on:
         <br>tarmac or concrete paths:
@@ -455,7 +456,7 @@
         nerve’s
         upper surface
     </span><span class="line" id=88>Margins of leaves inrolled and untoothed (hand lens); shoots
-    </span><span class="line" id=2> mm–7 cm tall:
+    2mm–7 cm tall:
         <span id="click" onclick="goto(89)">Click here</span>
         <br>Margins of leaves plane and toothed (hand lens); shoots 1–25 cm tall:
         <span id="click" onclick="goto(92)">Click here</span>
@@ -1773,7 +1774,7 @@
                 }
 
                 oldline = line;
-
+                document.getElementById("image").src = "img/"+line+".jpg";
 
 
             } 
