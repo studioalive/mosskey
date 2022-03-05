@@ -459,8 +459,14 @@ function mossDiff(name) {
             console.log(ease);
 
 document.getElementById("ease").innerHTML = ease[0].DIFF;
+if (ease[0].NOTES.length < 3) 
+{
+    document.getElementById("hnotes").style.display="none";
+}
+ else {
+    document.getElementById("hnotes").style.display="block";
 document.getElementById("notes").innerHTML = ease[0].NOTES;
-
+}
         })
 
         .catch(function (error) {
