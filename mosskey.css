@@ -36,11 +36,13 @@ body {
 span#click {
     background-color: #89cf1e;
     display: block;
+    padding: 30px;
 }
 
 span#species {
     background-color: #ff2f2f;
     display: block;
+    padding: 30px;
 }
 
 @media only screen and (orientation: portrait) {
