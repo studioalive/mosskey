@@ -3,11 +3,22 @@ body, html {
     margin:0;
 }
 
+button#back {
+    height: 31px;
+    width: 100vw;
+}
+
 .line {
     display: none;
-    width: calc(100% - 400px);
-    position: absolute;
-    padding: 30px;
+    width: calc(100% - 340px);
+    padding: 20px;
+    text-align: justify;
+    float:left;
+}
+
+span {
+    line-height: 20px;
+    font-size: 20px;
 }
 
 body {
@@ -15,22 +26,33 @@ body {
 }
 
 .image {
+    padding-top:20px;
     width:300px;
     height: auto;
     object-fit: cover;
     float:right;
 }
 
-span {
-    line-height: 2;
-    font-size: 20px;
-}
-
 span#click {
     background-color: #89cf1e;
+    display: block;
 }
 
 span#species {
     background-color: #ff2f2f;
     display: block;
 }
+
+@media only screen and (orientation: portrait) {
+    .image {
+        width:100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .line {
+        padding:0;
+        display: none;
+        width: 100%;
+    }
+  }
