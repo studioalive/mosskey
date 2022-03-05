@@ -1151,7 +1151,10 @@
         leaves, with nerve reaching 3/4 of the way up leaf; seta roughened throughout; on rocks, trees or soil, mostly
         in the east <span id="species">Brachythecium velutinum</span></span><span class="line" id=0>The End</span>
     <div class="image"><img id="image" src="img/10.jpg"></div>
-    <script> oldline = 0; goto(1); function goto(line) { document.getElementById(oldline).style.display = "none"; document.getElementById(line).style.display = "block"; if (!document.getElementById(line).dataset.back) { document.getElementById(line).dataset.back = oldline; } back = document.getElementById(line).dataset.back; intback = parseInt(back); var button = document.getElementById("back"); if (intback === 0) { button.style.visibility = "hidden"; } else { button.style.visibility = "visible"; button.setAttribute("onclick", "goto(" + back + ")"); } oldline = line; document.getElementById("image").src = "img/" + line + ".jpg"; }  </script>
+    <script> oldline = 0; goto(1); function goto(line) { document.getElementById(oldline).style.display = "none"; document.getElementById(line).style.display = "block"; if (!document.getElementById(line).dataset.back) { document.getElementById(line).dataset.back = oldline; } back = document.getElementById(line).dataset.back; intback = parseInt(back); var button = document.getElementById("back"); if (intback === 0) { button.style.visibility = "hidden"; } else { button.style.visibility = "visible"; button.setAttribute("onclick", "goto(" + back + ")"); } oldline = line; document.getElementById("image").src = "img/" + line + ".jpg "; 
+    document.getElementById("image").style.visibility="hidden";
+    document.getElementById("image").setAttribute("onload","this.style.visibility='visible'");
+}  </script>
 </body>
 
 </html>
