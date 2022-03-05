@@ -1,0 +1,36 @@
+body, html {
+    padding:0;
+    margin:0;
+}
+
+.line {
+    display: none;
+    width: calc(100% - 400px);
+    position: absolute;
+    padding: 30px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.image {
+    width:300px;
+    height: auto;
+    object-fit: cover;
+    float:right;
+}
+
+span {
+    line-height: 2;
+    font-size: 20px;
+}
+
+span#click {
+    background-color: #89cf1e;
+}
+
+span#species {
+    background-color: #ff2f2f;
+    display: block;
+}
